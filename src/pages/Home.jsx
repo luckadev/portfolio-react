@@ -11,9 +11,9 @@ const Home = () => {
           Eu me chamo Lucas Ribeiro, atualmente atuo na área de Desenvolvimento Frontend, porém gosto de entender sobre UI Design também. Construo aplicações web avançadas e focadas em performance.
         </p>
         <div className='links'>
-          <a href="#"><i className="fa-brands fa-github"></i></a>
-          <a href="#"><i className="fa-brands fa-linkedin"></i></a>
-          <a href="#"><i className="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/devlucaspro"><i className="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/devlucaspro"><i className="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/devcodepro"><i className="fa-brands fa-instagram"></i></a>
         </div>
 
         <section className='box'>

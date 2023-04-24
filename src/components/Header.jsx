@@ -67,7 +67,7 @@ const Header = () => {
   return (
     <header>
       <Link to='/'>
-        <img src="../src/assets/profile.png" alt="Lucas Ribeiro" />
+        <img src="/assets/profile.png" alt="Lucas Ribeiro" />
       </Link>
       <div>
         <button onClick={openMenu} className='btnMenu'>Menu <FontAwesomeIcon icon={arrow} /></button>
