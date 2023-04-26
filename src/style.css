@@ -312,15 +312,43 @@ footer p {
 }
 .photo-right ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 .photo-right a {
     font-size: 18px;
     font-weight: 500;
 }
+.photo-right ul li a i {
+    padding-right: 5px;
+}
+
 
 @media(max-width: 768px) {
     .text-left {
         width: 100%;
+    }
+    .photo-right {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 3rem;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 900px) {
+    h1 {
+        font-size: 40px !important;
+        line-height: 55px !important;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1050px) {
+    .photo-right img {
+        width: 100%;
+        max-width: 240px;
+        align-self: center;
     }
 }
 
@@ -328,9 +356,7 @@ footer p {
     .text-left {
         width: 50%;
     }
-    .photo-right img {
-        width: 100%;
-        max-width: 240px;
-        align-self: center;
+    .container-sobre {
+        flex-wrap: nowrap;
     }
 }
