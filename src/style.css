@@ -287,3 +287,50 @@ footer p {
         width: 100%;
     }
 }
+
+/* ----------------- */
+/* -------- sobre page ---------- */
+.container-sobre {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-sobre .text-left :where(h1, p) {
+    width: 100%;
+}
+.text-left {
+    flex-direction: column;
+    width: 60%;
+}
+.photo-right {
+    flex-direction: column;
+    padding-inline: 0.5rem;
+}
+.photo-right img {
+    width: 100%;
+    max-width: 330px;
+}
+.photo-right ul {
+    list-style: none;
+}
+.photo-right a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media(max-width: 768px) {
+    .text-left {
+        width: 100%;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 1239px) {
+    .text-left {
+        width: 50%;
+    }
+    .photo-right img {
+        width: 100%;
+        max-width: 240px;
+        align-self: center;
+    }
+}
