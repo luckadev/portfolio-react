@@ -389,11 +389,17 @@ footer p {
     border-radius: 20px 0px;
     border: 1px solid var(--third);
 }
+.project h1 {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 20px 0px;
+}
 .project div a {
     font-size: 18px;
     background-color: var(--white);
     color: var(--primary);
     padding: 10px 15px;
+    text-align: center;
 }
 .project div .btn-repo {
     background-color: var(--secondary);
@@ -406,23 +412,6 @@ footer p {
 .project div .btn-repo:hover {
     background-color: var(--third);
     color: var(--white);
-}
-/* project id */
-#one {
-    background-image: url(/assets/checktodo.png);
-    background-position: center;
-    background-size: cover;
-    background-clip:padding-box;
-}
-#two {
-    background-image: url(/assets/primeflick.png);
-    background-position: center;
-    background-size: cover;
-}
-#three {
-    background-image: url(/assets/devfront.png);
-    background-position: center;
-    background-size: cover;
 }
 
 @media (max-width: 375px) {
@@ -437,4 +426,63 @@ footer p {
     .project {
         padding: 5rem 2rem;
     }
+}
+
+/* -------------------- */
+/* -------- page posts ------------ */
+.container-posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.container-posts h3, .container-posts p {
+    width: 100%;
+}
+
+.container-posts .text-post h3 {
+    width: max-content;
+}
+.container-posts .text-post a {
+    font-size: 18px;
+    width: max-content;
+    background-color: var(--white);
+    color: var(--primary) !important;
+    padding: 5px;
+}
+
+.container-posts .text-post a:hover {
+    background-color: var(--white2);
+}
+
+.container-posts .text-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ---------------- */
+/* --------- page skills ---------- */
+
+
+
+/* ---------------------- */
+/* ----------- page Contato ----------- */
+.contato {
+    margin-bottom: 15rem;
+}
+.links-contato {
+    margin-top: 2rem;
+}
+.links-contato a {
+    border: 1px solid var(--secondary);
+    padding: 0.6rem;
+}
+.links-contato a:hover {
+    background-color: var(--secondary);
 }

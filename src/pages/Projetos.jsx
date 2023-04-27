@@ -5,26 +5,44 @@ const Projetos = () => {
   let projetos = [
     {
       titulo: 'Check ToDo',
-      site: '',
-      repositorio: '',
+      site: 'https://checktododevlucas.netlify.app/',
+      repositorio: 'https://github.com/devlucaspro/checkToDo',
       capa: '/assets/checktodo.png',
-      id: 'one'
     },
     {
       titulo: 'Prime flick',
-      site: '',
-      repositorio: '',
-      capa: '',
-      id: 'two'
+      site: 'https://primeflick.netlify.app/',
+      repositorio: 'https://github.com/devlucaspro/primeflick',
+      capa: '/assets/primeflick.png',
     },
     {
       titulo: 'Dev Front',
-      site: '',
-      repositorio: '',
-      capa: '',
-      id: 'three'
+      site: 'https://devfrontchallenges.netlify.app/',
+      repositorio: 'https://github.com/devlucaspro/devfrontchallenges',
+      capa: '/assets/devfront.png',
+    },
+    {
+      titulo: 'Card Details',
+      site: 'https://carddetails-devfrontchallenges.vercel.app/',
+      repositorio: 'https://github.com/devlucaspro/card-details-devfront',
+      capa: '/assets/cardDetails.png',
     },
   ]
+
+  useEffect(() => {
+    function capa() {
+      projetos.map((item, index) => {
+        let div = document.getElementById(index)
+        div.style.backgroundImage = `url(${item.capa})`
+        div.style.backgroundSize = 'cover'
+        div.style.backgroundPosition = 'center'
+      })
+    }
+  
+    capa()
+  }, [])
+
+  
 
   return (
     <div className='container container-col'>
@@ -36,11 +54,11 @@ const Projetos = () => {
       <div className='projects-div'>
         {projetos.map((item, index) => {
           return(
-            <div key={index} className='project' id={item.id}>
+            <div key={index} className='project' id={index}>
               <h1>{item.titulo}</h1>
               <div>
-                <a href="#" className='btn-ver'>Ver</a>
-                <a href="#" className='btn-repo'>Repositório</a>
+                <a href={item.site} className='btn-ver'>Ver</a>
+                <a href={item.repositorio} className='btn-repo'>Repositório</a>
               </div>
             </div>
           )
