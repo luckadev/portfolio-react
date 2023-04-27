@@ -360,3 +360,81 @@ footer p {
         flex-wrap: nowrap;
     }
 }
+
+/* ----------------- */
+/* -------------- page projects ------------- */
+.container-col {
+    flex-direction: column !important;
+}
+.container :where(h1, p) {
+    width: 100%;
+}
+.title-content {
+    display: flex;
+    flex-direction: column;
+}
+.projects-div {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 7rem;
+    flex-wrap: wrap;
+}
+.project {
+    flex-direction: column;
+    padding: 6rem 4rem;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    border-radius: 20px 0px;
+    border: 1px solid var(--third);
+}
+.project div a {
+    font-size: 18px;
+    background-color: var(--white);
+    color: var(--primary);
+    padding: 10px 15px;
+}
+.project div .btn-repo {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+.project div .btn-ver:hover {
+    background-color: var(--white2);
+    color: var(--primary);
+}
+.project div .btn-repo:hover {
+    background-color: var(--third);
+    color: var(--white);
+}
+/* project id */
+#one {
+    background-image: url(/assets/checktodo.png);
+    background-position: center;
+    background-size: cover;
+    background-clip:padding-box;
+}
+#two {
+    background-image: url(/assets/primeflick.png);
+    background-position: center;
+    background-size: cover;
+}
+#three {
+    background-image: url(/assets/devfront.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 375px) {
+    .project div {
+        flex-direction: column;
+    }
+}
+@media (max-width: 910px) {
+    .projects-div {
+        flex-direction: column;
+    }
+    .project {
+        padding: 5rem 2rem;
+    }
+}
