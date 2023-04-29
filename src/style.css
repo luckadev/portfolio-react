@@ -392,13 +392,14 @@ footer p {
     width: 100%;
     max-width: 350px;
     height: 100%;
-    border-radius: 20px 0px;
+    border-radius: 8px;
     border: 1px solid var(--third);
 }
 .project h1 {
     background-color: var(--primary);
     color: var(--white);
-    border-radius: 20px 0px;
+    text-align: center;
+    width: 100%;
 }
 .project div a {
     font-size: 18px;
@@ -406,6 +407,7 @@ footer p {
     color: var(--primary);
     padding: 10px 15px;
     text-align: center;
+    border: 1px solid var(--third);
 }
 .project div {
     gap: 1rem;
