@@ -6,7 +6,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const Home = () => {
   return (
     <div className='container'>
-        <h1>Frontend Software Developer, Creator, e Criativo.</h1>
+        <h1>Frontend Software Developer, Creator, e Criativo<span>.</span></h1>
         <p>
           Eu me chamo Lucas Ribeiro, atualmente atuo na área de Desenvolvimento Frontend, porém gosto de entender sobre UI Design também. Construo aplicações web avançadas e focadas em performance.
         </p>

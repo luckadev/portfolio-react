@@ -212,6 +212,10 @@ footer p {
     width: 70%;
 }
 
+.container h1 span {
+    color: var(--color1);
+}
+
 .container div {
     display: flex;
     gap: 2rem;
@@ -470,16 +474,51 @@ footer p {
 
 /* ---------------- */
 /* --------- page skills ---------- */
+.tech-container {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tech-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tech-col a {
+    font-size: 3rem;
+    border: 1px solid var(--third);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.4rem;
+    gap: 5px;
+}
+.tech-col a:hover {
+    background-color: var(--third);
+}
+.tech-col a:hover i {
+    color: var(--color1) !important;
+}
+.tech-col a span {
+    font-size: 14px;
+}
 
+@media (max-width: 560px) {
+    .tech-col a {
+        width: 100%;
+    }
+}
 
 
 /* ---------------------- */
 /* ----------- page Contato ----------- */
 .contato {
     margin-bottom: 15rem;
-}
-.contato h1 span {
-    color: var(--color1);
 }
 .links-contato {
     margin-top: 2rem;

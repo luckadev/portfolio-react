@@ -4,7 +4,7 @@ const Sobre = () => {
   return (
     <div className='container container-sobre'>
       <div className='text-left'>
-        <h1>Olá! Meu nome é Lucas Ribeiro...</h1>
+        <h1>Olá! Meu nome é Lucas Ribeiro<span>.</span></h1>
         <p>
           e sou programador, ou como a maioria gosta de chamar, desenvolvedor frontend, tenho 18 anos, nasci em Piracicaba, localizado no interior de São Paulo.
         </p>

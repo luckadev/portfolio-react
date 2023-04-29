@@ -42,8 +42,8 @@ const Posts = () => {
   return (
     <div className='container'>
       <div className='title-content'>
-        <h1>Posts.</h1>
-        <p>Conteúdo sobre programação frontend diretamente no Instagram.</p>
+        <h1>Posts<span>.</span></h1>
+        <p>Conteúdo sobre programação frontend diretamente no Instagram</p>
       </div>
       {posts.map(((item, index) => {
         return(

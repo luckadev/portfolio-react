@@ -52,6 +52,22 @@ const Header = () => {
       a.forEach((item) => {
         item.classList.add('aVisible')
       })
+
+      let menuItems = document.getElementsByClassName('aVisible')
+      for(let item of menuItems) {
+        item.addEventListener('click', () => {
+
+          menu.classList.remove('menuActive');
+
+          let a = document.querySelectorAll('#menu a');
+          a.forEach((item) => {
+            item.classList.remove('aVisible')
+          })
+
+          setArrow(faChevronDown);
+
+        })
+      }
     } else {
 
       setArrow(faChevronDown);
@@ -61,7 +77,6 @@ const Header = () => {
         item.classList.remove('aVisible')
       })
     }
-
   }
 
   return (
