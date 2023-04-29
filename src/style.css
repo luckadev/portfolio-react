@@ -43,7 +43,7 @@ p {
 h1 {
     font-family: 'Sora', sans-serif;
     font-size: 45px;
-    line-height: 60px;
+    line-height: 120%;
 }
 
 h3 {
@@ -52,6 +52,8 @@ h3 {
     line-height: 32px;
     font-weight: 500;
 }
+
+/* ------------------ */
 
 /* header component ------------- */
 header {
@@ -212,7 +214,7 @@ footer p {
 
 .container div {
     display: flex;
-    gap: 1.4rem;
+    gap: 2rem;
     font-size: 1.5rem;
 }
 
@@ -476,13 +478,28 @@ footer p {
 .contato {
     margin-bottom: 15rem;
 }
+.contato h1 span {
+    color: var(--color1);
+}
 .links-contato {
     margin-top: 2rem;
 }
 .links-contato a {
     border: 1px solid var(--secondary);
-    padding: 0.6rem;
+    padding: 0.8rem;
+    transition: all .3s;
 }
 .links-contato a:hover {
     background-color: var(--secondary);
+    color: var(--color1) !important;
+}
+
+/* ------------------ */
+@media(max-width: 520px) {
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 30px;
+    }
 }

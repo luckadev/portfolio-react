@@ -32,6 +32,7 @@ const Posts = () => {
         div.style.maxWidth = '500px'
         div.style.height = '300px'
         div.style.borderRadius = '8px'
+        div.style.border = '1px solid var(--third)'
       })
     }
 
@@ -60,4 +61,4 @@ const Posts = () => {
   )
 }
 
-export default Posts
+export default Posts;
