@@ -379,7 +379,7 @@ footer p {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 7rem;
+    margin-top: 6rem;
     flex-wrap: wrap;
 }
 .project {
@@ -403,6 +403,9 @@ footer p {
     padding: 10px 15px;
     text-align: center;
 }
+.project div {
+    gap: 1rem;
+}
 .project div .btn-repo {
     background-color: var(--secondary);
     color: var(--white);
@@ -422,9 +425,6 @@ footer p {
     }
 }
 @media (max-width: 910px) {
-    .projects-div {
-        flex-direction: column;
-    }
     .project {
         padding: 5rem 2rem;
     }
@@ -502,4 +502,5 @@ footer p {
     h1 {
         font-size: 30px;
     }
+    
 }
