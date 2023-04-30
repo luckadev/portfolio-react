@@ -499,6 +499,8 @@ footer p {
     justify-content: center;
     padding: 1.4rem;
     gap: 5px;
+
+    width: 140px;
 }
 .tech-col a:hover {
     background-color: var(--third);
@@ -510,7 +512,7 @@ footer p {
     font-size: 14px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 355px) {
     .tech-col a {
         width: 100%;
     }
