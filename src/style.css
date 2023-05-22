@@ -14,7 +14,11 @@ font-family: 'Sora', sans-serif; */
     --third: #454549;
     --white: #F2F2F2;
     --white2: #CECECE;
+
     --color1: #30C7E9;
+    --color2: #30e99c;
+    --color3: #e6a835;
+    --color4: #c635eb;
 }
 
 body {
@@ -396,8 +400,7 @@ footer p {
     border: 1px solid var(--third);
 }
 .project h1 {
-    background-color: var(--primary);
-    color: var(--white);
+    color: var(--primary);
     text-align: center;
     width: 100%;
 }
@@ -421,7 +424,7 @@ footer p {
     color: var(--primary);
 }
 .project div .btn-repo:hover {
-    background-color: var(--third);
+    background-color: var(--primary);
     color: var(--white);
 }
 

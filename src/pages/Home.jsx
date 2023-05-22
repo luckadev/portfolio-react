@@ -34,7 +34,7 @@ const Home = () => {
           <div>
             <h3>Eu ouvi falar em comunidade?!</h3>
             <p>
-              Minha comunidade que está crescendo cada dia mais, compartilho dicas e conhecimentos lá.
+              Minha comunidade que está crescendo cada dia mais, compartilho dicas e conhecimentos.
             </p>
             <Link to='/posts'>Ver mais <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
           </div>
