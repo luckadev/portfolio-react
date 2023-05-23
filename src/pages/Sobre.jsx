@@ -15,7 +15,7 @@ const Sobre = () => {
           No meu dia a dia eu geralmente desenvolvo as minhas aplicações utilizando as seguintes ferramentas: Javascript, React.JS, Styled Components.
         </p>
         <p>
-          Eu sempre estou aprendendo algo novo, ultimamente estou estudando Next.JS, para mais detalhes das minhas Habilidades Técnicas, acesse a sessão <strong>Skills</strong>.
+          Eu sempre estou aprendendo algo novo, ultimamente estou estudando Node.JS, para mais detalhes das minhas Habilidades Técnicas, acesse a sessão <strong>Skills</strong>.
         </p>
         <p>
           Compartilho dicas e conhecimentos sobre a área de programação frontend no meu Instagram - @Devcodepro.
