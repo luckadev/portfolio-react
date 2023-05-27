@@ -65,7 +65,7 @@ const Header = () => {
           })
 
           setArrow(faChevronDown);
-
+          window.scrollTo(0, 0);
         })
       }
     } else {

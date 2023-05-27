@@ -51,7 +51,7 @@ const Posts = () => {
             <div id={index}></div>
             <div className='text-post'>
               <h3>{item.title}</h3>
-              <a href='https://www.instagram.com/devcodepro'>Acessar</a>
+              <a href='https://www.instagram.com/devcodepro' target='blank'>Acessar</a>
             </div>
             <p>{item.descricao}</p>
           </div>

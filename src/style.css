@@ -47,7 +47,7 @@ p {
 
 h1 {
     font-family: 'Sora', sans-serif;
-    font-size: 45px;
+    font-size: 41px;
     line-height: 120%;
 }
 
@@ -68,6 +68,7 @@ header {
     padding-top: .7rem;
     position: sticky;
     top: 0px;
+    z-index: 999;
 }
 
 header a img {
@@ -391,19 +392,37 @@ footer p {
     margin-top: 6rem;
     flex-wrap: wrap;
 }
+.gap {
+    gap: 1rem !important;
+}
 .project {
     flex-direction: column;
-    padding: 6rem 4rem;
+    gap: 1rem !important;
+    padding: 2rem;
     width: 100%;
-    max-width: 350px;
+    max-width: 280px;
     height: 100%;
     border-radius: 8px;
     border: 1px solid var(--third);
+    cursor: default;
 }
 .project h1 {
     color: var(--black);
     text-align: center;
     width: 100%;
+}
+.project h1 i {
+    color: var(--white);
+    opacity: 70%;
+    transition: all .4s;
+}
+.project p {
+    text-align: center;
+    color: var(--white);
+    width: 100%;
+}
+.project:hover h1 i {
+    opacity: 100%;
 }
 .project div a {
     font-size: 18px;
@@ -415,6 +434,10 @@ footer p {
 }
 .project div {
     gap: 1rem;
+    justify-content: center;
+}
+.project div .btn-repo, .project div .btn-ver {
+    border-radius: 8px;
 }
 .project div .btn-repo {
     background-color: var(--secondary);
@@ -434,9 +457,9 @@ footer p {
         flex-direction: column;
     }
 }
-@media (max-width: 910px) {
+@media (max-width: 654px) {
     .project {
-        padding: 5rem 2rem;
+        max-width: 100%;
     }
 }
 
@@ -464,11 +487,14 @@ footer p {
     width: max-content;
     background-color: var(--white);
     color: var(--primary) !important;
-    padding: 5px;
+    padding: 7px;
+    border-radius: 8px;
+    transition: all .4s;
 }
 
 .container-posts .text-post a:hover {
     background-color: var(--white2);
+    box-shadow: 0 0 20px var(--white);
 }
 
 .container-posts .text-post {
