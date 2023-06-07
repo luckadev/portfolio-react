@@ -1,62 +1,48 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Projetos = () => {
 
+  function openProject(site) {
+    window.open(site, 'blank');
+  }
+
   let projetos = [
     {
-      titulo: 'React Dashboard',
-      site: 'https://dashboard-devlucas.netlify.app/',
-      repositorio: 'https://github.com/devlucaspro/dashboard-react',
-      color: 'var(--color1)',
-      icon: 'fa-solid fa-paperclip fa-xs',
-      description: 'Dashboard feito com React.JS e Firebase',
-    },
-    {
-      titulo: 'React To Do',
+      name: 'To Do List',
+      desc: 'Projeto desenvolvido com React, Router-dom e Firestore do Firebase.',
+      capa: './assets/todoproject.png',
       site: 'https://todo-react-lucasdeveloper.netlify.app/',
-      repositorio: 'https://github.com/devlucaspro/toDoList-React',
-      color: 'var(--color1)',
-      icon: 'fa-solid fa-pen-to-square fa-xs',
-      description: 'Uma aplicação de tarefas(to Do list)',
+      icon: 'fa-solid fa-circle-check'
     },
     {
-      titulo: 'Prime flick',
-      site: 'https://primeflick.netlify.app/',
-      repositorio: 'https://github.com/devlucaspro/primeflick',
-      color: 'var(--color2)',
-      icon: 'fa-brands fa-readme fa-xs',
-      description: 'Plataforma de filmes com React.JS e Router',
+      name: 'Dashboard',
+      desc: 'Dashboard para controle de clientes desenvolvido com React, Router-dom, context-api e Firebase.',
+      capa: './assets/dashboard.png',
+      site: 'https://dashboard-devlucas.netlify.app/',
+      icon: 'fa-solid fa-book-open'
     },
     {
-      titulo: 'Dev Front',
+      name: 'Talkioo',
+      desc: 'Plataforma educacional de inglês feito com React, Router-dom, context-api e Firebase.',
+      capa: './assets/talkioo.png',
+      site: 'https://talkioo.netlify.app/',
+      icon: 'fa-solid fa-globe'
+    },
+    {
+      name: 'Dev Front',
+      desc: 'Plataforma onde ofereço desafios para desenvolvedores frontend, feito com html, css e js.',
+      capa: './assets/devfront.png',
       site: 'https://devfrontchallenges.netlify.app/',
-      repositorio: 'https://github.com/devlucaspro/devfrontchallenges',
-      color: 'var(--color3)',
-      icon: 'fa-solid fa-code fa-xs',
-      description: 'Plataforma de desafios Frontend',
+      icon: 'fa-solid fa-code'
     },
     {
-      titulo: 'Learn Talkioo',
-      site: 'https://talkioo.vercel.app/',
-      repositorio: 'https://github.com/devlucaspro/talkioo',
-      color: 'var(--color4)',
-      icon: 'fa-solid fa-book fa-xs',
-      description: 'Aprenda Inglês com a Talkioo, muitos desafios',
+      name: 'Check To Do',
+      desc: 'Uma To Do List simples porém salvando os dados no localStorage do usuário, feito com html, css e js.',
+      capa: './assets/checktodo.png',
+      site: 'https://checktododevlucas.netlify.app/',
+      icon: 'fa-solid fa-list'
     },
-  ]
-
-  useEffect(() => {
-    function capa() {
-      projetos.map((item, index) => {
-        let div = document.getElementById(index)
-        div.style.backgroundColor = item.color
-      })
-    }
-  
-    capa()
-  }, [])
-
-  
+  ];
 
   return (
     <div className='container container-col'>
@@ -65,16 +51,16 @@ const Projetos = () => {
         <p>Websites, Aplicações web, SPA's, Sistemas interessantes.</p>
       </div>
 
-      <div className='projects-div gap'>
+      <div className='div-projects'>
         {projetos.map((item, index) => {
           return(
-            <div key={index} className='project' id={index}>
-              <h1><i className={item.icon}></i> {item.titulo}</h1>
-              <p>{item.description}</p>
-              <div>
-                <a href={item.site} target='blank' className='btn-ver'>Ver</a>
-                <a href={item.repositorio} target='blank' className='btn-repo'>Repositório</a>
+            <div key={index} className='project'>
+              <div className='header-project'>
+                <i className={item.icon}></i>
+                <a className='a-project' href={item.site} target='blank' title='Ver projeto'>{item.name}</a>
               </div>
+              <p>{item.desc}</p>
+              <img onClick={() => openProject(item.site)} src={item.capa} alt={item.name} title='Clique para ver projeto' />
             </div>
           )
         })}

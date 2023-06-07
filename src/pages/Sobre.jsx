@@ -6,7 +6,7 @@ const Sobre = () => {
       <div className='text-left'>
         <h1>Olá! Meu nome é Lucas Ribeiro<span>.</span></h1>
         <p>
-          e sou programador, ou como a maioria gosta de chamar, desenvolvedor frontend, tenho 18 anos, nasci em Piracicaba, localizado no interior de São Paulo.
+          Sou programador, ou como a maioria gosta de chamar, desenvolvedor frontend, tenho 18 anos, nasci em Piracicaba, localizado no interior de São Paulo.
         </p>
         <p>
           Desde de criança sempre gostei da área de TI e de mexer em computadores, depois dos 16 anos comecei a me interessar sobre o mundo da programação e então virou minha paixão.

@@ -4,19 +4,19 @@ const Posts = () => {
 
   let posts = [
     {
+      capa: '/assets/corte1.png',
+      title: 'Portfólio de sucesso',
+      descricao: 'Descubra algumas dicas que podem alavancar seu portfólio e ajudar você a crescer.'
+    },
+    {
+      capa: '/assets/postdev2.png',
+      title: 'Dicas de Projeto',
+      descricao: 'Melhore seus projetos aplicando essas 3 dicas importantes que eu falo nesse post incrível.'
+    },
+    {
       capa: '/assets/100.png',
-      title: 'Recursos Gratuitos',
-      descricao: 'Ferramentas gratuitas para desenvolvedores frontend.'
-    },
-    {
-      capa: '/assets/110.png',
-      title: 'Projetos Frontend',
-      descricao: 'Melhores projetos frontend para desenvolver e se destacar.'
-    },
-    {
-      capa: '/assets/130.png',
-      title: 'Roadmap Frontend',
-      descricao: 'Um resumo das tecnologias que um iniciante deve aprender para entrar para o mercado.'
+      title: 'Recursos gratuitos',
+      descricao: 'Ferramentas gratuitas para desenvolvedores frontend/web.'
     },
   ]
 
