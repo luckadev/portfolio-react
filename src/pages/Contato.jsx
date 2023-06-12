@@ -4,7 +4,7 @@ const Contato = () => {
   return (
     <div className='container contato'>
       <h1>Contato<span>.</span></h1>
-      <p>Tem alguma ideia? Onde me encontrar?</p>
+      <p>Tem alguma ideia? Me encontre a partir dos seguintes links</p>
       <div className='links-contato'>
         <a href="https://www.linkedin.com/in/devlucaspro" title='Linkedin'><i className="fa-brands fa-linkedin"></i></a>
         <a href="https://github.com/devlucaspro" title='Github'><i className="fa-brands fa-github"></i></a>

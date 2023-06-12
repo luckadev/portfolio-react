@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Title from '../components/Title'
 
 const Posts = () => {
 
@@ -41,10 +42,8 @@ const Posts = () => {
 
   return (
     <div className='container'>
-      <div className='title-content'>
-        <h1>Posts<span>.</span></h1>
-        <p>Conteúdo sobre programação frontend diretamente no Instagram</p>
-      </div>
+      <Title h1children={"Posts"} pchildren={"Conteúdo sobre programação frontend diretamente no Instagram"} />
+      
       {posts.map(((item, index) => {
         return(
           <div key={index} className='container-posts'>

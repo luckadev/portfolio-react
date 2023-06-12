@@ -22,21 +22,21 @@ const Home = () => {
             <p>
               Conheça um pouco da minha história e porquê eu decidi querer virar programador.
             </p>
-            <Link to='/sobre'>Ver mais <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
+            <Link to='/sobre'><p>Ver mais</p> <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
           </div>
           <div>
             <h3>O que eu já desenvolvi?</h3>
             <p>
               Conheça dos novos até mais antigos projetos que eu desenvolvi como programador.
             </p>
-            <Link to='/projetos'>Ver mais <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
+            <Link to='/projetos'><p>Ver mais</p> <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
           </div>
           <div>
             <h3>Eu ouvi falar em comunidade?!</h3>
             <p>
               Minha comunidade que está crescendo cada dia mais, compartilho dicas e conhecimentos.
             </p>
-            <Link to='/posts'>Ver mais <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
+            <Link to='/posts'><p>Ver mais</p> <FontAwesomeIcon className='iconBox' icon={faArrowRight} /></Link>
           </div>
         </section>
     </div>

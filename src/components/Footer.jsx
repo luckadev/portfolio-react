@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'; 
 
 const Footer = () => {
+
+  useEffect(() => {
+    toTop()
+  }, [])
+
+  function toTop() {
+    let aElement = document.querySelectorAll('footer ul li');
+    aElement.forEach(item => {
+      item.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      })
+    })
+  }
+
   return (
     <footer>
         <ul>

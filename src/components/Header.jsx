@@ -1,15 +1,31 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from '@fortawesome/free-solid-svg-icons';
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'; 
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faMoon, faSun, faChevronUp, faChevronDown, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
 
   const [dark, setDark] = useState(true);
   const [arrow, setArrow] = useState(faChevronDown);
+
+  useEffect(() => {
+    toTop()
+  }, [])
+
+  function toTop() {
+    let aElement = document.querySelectorAll('nav a');
+    aElement.forEach(item => {
+      item.addEventListener("click", () => {
+        window.scrollTo(0, 0);
+      })
+    })
+
+    let logo = document.getElementById('logo');
+    logo.addEventListener('click', () => {
+      window.scrollTo(0, 0);
+    })
+  }
+
 
   function darkMode() {
 
@@ -19,9 +35,10 @@ const Header = () => {
 
       function myFunction_set() {
         root.style.setProperty('--primary', '#F2F2F2');
-        root.style.setProperty('--secondary', '#CECECE');
+        root.style.setProperty('--secondary', '#f8f8f8');
         root.style.setProperty('--white', '#161618');
         root.style.setProperty('--white2', '#212124');
+        root.style.setProperty('--color1', '#e6a835');
       }
       
       myFunction_set();
@@ -33,6 +50,7 @@ const Header = () => {
         root.style.setProperty('--secondary', '#212124');
         root.style.setProperty('--white', '#F2F2F2');
         root.style.setProperty('--white2', '#CECECE');
+        root.style.setProperty('--color1', '#30C7E9');
       }
       
       myFunction_set();
@@ -81,7 +99,7 @@ const Header = () => {
 
   return (
     <header>
-      <Link to='/'>
+      <Link to='/' id='logo'>
         <img src="/assets/profile.png" alt="Lucas Ribeiro" />
       </Link>
       <div>
@@ -94,7 +112,7 @@ const Header = () => {
           <Link to='/contato'>Contato <FontAwesomeIcon className='arrowIcon' icon={faArrowRight} /></Link>
         </nav>
       </div>
-      <button onClick={darkMode}><FontAwesomeIcon icon={faMoon} /></button>
+      <button onClick={darkMode}><FontAwesomeIcon icon={dark ? faMoon : faSun} /></button>
     </header>
   )
 }

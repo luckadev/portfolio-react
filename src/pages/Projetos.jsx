@@ -1,4 +1,5 @@
 import React from 'react'
+import Title from '../components/Title';
 
 const Projetos = () => {
 
@@ -46,10 +47,7 @@ const Projetos = () => {
 
   return (
     <div className='container container-col'>
-      <div className='title-content'>
-        <h1>Projetos que desenvolvi<span>.</span></h1>
-        <p>Websites, Aplicações web, SPA's, Sistemas interessantes.</p>
-      </div>
+      <Title h1children={"Projetos que desenvolvi"} pchildren={"Websites, Aplicações web, SPA's, Sistemas interessantes."} />
 
       <div className='div-projects'>
         {projetos.map((item, index) => {

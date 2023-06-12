@@ -277,8 +277,22 @@ footer p {
     width: 100%;
 }
 .container .box div a {
+    display: flex;
+    align-items: center;
+
     font-size: 18px;
     color: var(--color1);
+    transition: all .3s;
+}
+
+.container .box div a p {
+    color: var(--color1);
+    margin-right: 2px;
+    transition: all .3s;
+}
+
+.container .box div a:hover p {
+    margin-right: 10px;
 }
 
 .iconBox {
@@ -515,15 +529,14 @@ footer p {
     gap: 5px;
 
     width: 140px;
-}
-.tech-col a:hover {
-    background-color: var(--third);
-}
-.tech-col a:hover i {
-    color: var(--color1) !important;
+    transition: all .3s;
 }
 .tech-col a span {
     font-size: 14px;
+}
+
+.tech-col a:hover {
+    box-shadow: 0px 0px 8px var(--white2);
 }
 
 @media (max-width: 355px) {
@@ -537,12 +550,16 @@ footer p {
 /* ----------- page Contato ----------- */
 .contato {
     margin-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .links-contato {
     margin-top: 2rem;
 }
 .links-contato a {
-    border: 1px solid var(--secondary);
+    border: 1px solid var(--third);
     padding: 0.8rem;
     transition: all .3s;
 }
@@ -559,5 +576,4 @@ footer p {
     h1 {
         font-size: 30px;
     }
-    
 }
