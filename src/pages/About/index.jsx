@@ -23,9 +23,9 @@ const About = () => {
       </div>
       
       <div className='photo-carousel-mobile'>
-        <img className='hidden' src="./assets/photo-2.png" alt="image 1" />
-        <img className='hidden' src="./assets/photo-3.png" alt="image 2" />
-        <img className='hidden' src="./assets/photo-1.png" alt="image 3" />
+        <img src="./assets/photo-2.png" alt="image 1" />
+        <img src="./assets/photo-3.png" alt="image 2" />
+        <img src="./assets/photo-1.png" alt="image 3" />
       </div>
     </div>
   )
