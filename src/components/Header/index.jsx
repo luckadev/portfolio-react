@@ -15,6 +15,15 @@ const Header = () => {
     } else {
       document.body.style.overflow = 'auto';
     }
+
+    let liElement = document.querySelectorAll('#ul li a')
+    liElement.forEach((value) => {
+      value.addEventListener('click', () => {
+        ulElement.classList.remove('menuActive');
+        icon.classList.remove("icon-active");
+        document.body.style.overflow = 'auto';
+      })
+    }) 
   }
 
   return (

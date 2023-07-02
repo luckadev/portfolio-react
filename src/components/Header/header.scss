@@ -7,6 +7,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem 0;
+  z-index: 99999;
 
   h4 {
     font-size: $subtitle;
@@ -100,7 +101,6 @@ header {
       border: none;
       color: $white;
       font-size: 18px;
-      z-index: 9999;
     }
 
     ul {
@@ -118,7 +118,6 @@ header {
       opacity: 0;
       visibility: hidden;
       overflow-x: auto;
-      z-index: 99999;
     }
 
     .menuActive {
