@@ -13,9 +13,9 @@ const Work = () => {
       id: 1,
     },
     {
-      image: "./assets/soon-image.png",
-      name: "UIcode landing page",
-      description: "A landing page for an eBook called UIcode <span>what the reason to this eBook is to call people to learn ui design on figma</span><span class='dot'>.</span>",
+      image: "./assets/thirdeye-lp.png",
+      name: "ThirdEye landing page",
+      description: "A landing page for a company called ThirdEye <span>what the reason to this company is to provide a better way for payments on web3</span><span class='dot'>.</span>",
       topic: "Development & Design",
       link: "#",
       id: 2,
