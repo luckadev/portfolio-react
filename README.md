@@ -1,11 +1,10 @@
 # My portfolio 👋
 
-Here you can see how i made it, my recent porfolio made using React.JS (SPA's).
+Here you can see how i made it, my recent porfolio made using React.JS.
 
 ## Technologies i used building this 🧑‍💻
 - React.JS
-- React Router for SPA
-- CSS
+- SASS
 - UI Design using Figma
 
 ## Who am i? ☕
