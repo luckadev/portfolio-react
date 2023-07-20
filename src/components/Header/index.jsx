@@ -6,7 +6,7 @@ const Header = () => {
   useEffect(() => {
     function headerEffectScroll() {
       window.addEventListener('scroll', () => {
-        if(window.scrollY > 50) {
+        if(window.scrollY > 90) {
           document.querySelector('header').classList.add('header-active');
         } else {
           document.querySelector('header').classList.remove('header-active');
