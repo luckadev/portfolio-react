@@ -17,16 +17,24 @@ const Work = () => {
       name: "ThirdEye landing page",
       description: "A landing page for a company called ThirdEye <span>what the reason to this company is to provide a better way for payments on web3</span><span class='dot'>.</span>",
       topic: "Development & Design",
-      link: "#",
+      link: "https://thirdeye-devlucas.netlify.app/",
       id: 2,
     },
     {
-      image: "./assets/soon-image.png",
+      image: "./assets/frontcode-moc.png",
+      name: "Frontcode web platform",
+      description: "A web platform for coding challenges and projects <span>for frontend developers try them out and improve their programming skills</span><span class='dot'>.</span>",
+      topic: "Development & Design",
+      link: "#",
+      id: 1,
+    },
+    {
+      image: "./assets/insta-moc.png",
       name: "Social media posts",
       description: "My Instagram account where i post programming <span>content and ui design tips for beginners, however it's in portuguese</span><span class='dot'>.</span>",
       topic: "Design & Content Creation",
       link: "https://www.instagram.com/ribeiroo.dev",
-      id: 1,
+      id: 2,
     },
   ]
 

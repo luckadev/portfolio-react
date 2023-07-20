@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './header.scss'
 
 const Header = () => {
+
+  useEffect(() => {
+    function headerEffectScroll() {
+      window.addEventListener('scroll', () => {
+        if(window.scrollY > 50) {
+          document.querySelector('header').classList.add('header-active');
+        } else {
+          document.querySelector('header').classList.remove('header-active');
+        }
+      })
+    }
+
+    headerEffectScroll();
+  }, [])
 
   function handleOpenMenu() {
     let ulElement = document.getElementById("ul");
