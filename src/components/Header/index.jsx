@@ -9,12 +9,10 @@ const Header = () => {
   }, [])
 
   function gsapHeader() {
-    const timelineHeader = gsap.timeline({ defaults: { duration: 1 }})
+    const timelineHeader = gsap.timeline({ defaults: { duration: 2 }})
     timelineHeader
-      .from('.header', { y: '-100%', ease: 'bounce' })
-      .from('.h4-header', { x: '-200%', ease: 'easeOut' })
-      .from('.links-header', { x: '100vw', ease: 'easeOut', stagger: .5 }, 1.7)
-      .from('.btn-header', { x: '200%', ease: 'easeOut' }, 2)
+      .from('.h4-header', { x: '-200%', ease: 'bounce' })
+      .from('.btn-header', { y: '-200px', ease: 'easeOut' }, 1)
   }
 
   function headerEffectScroll() {
