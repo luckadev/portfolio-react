@@ -5,7 +5,7 @@ const Work = () => {
 
   const projects = [
     {
-      image: "./assets/image-1.png",
+      image: "./assets/portfolio-moc.png",
       name: "Portfolio website",
       description: "My portfolio website as a frontend developer <span>and ui designer. Here you can see all my projects and ideas coming true</span><span class='dot'>.</span>",
       topic: "Development & Design",
