@@ -1,7 +1,27 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { gsap, ScrollTrigger } from 'gsap/all';
 import "./about.scss";
 
 const About = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+  
+  useEffect(() => {
+    aboutAnimation();
+  }, [])
+
+  function aboutAnimation() {
+    gsap.from('.about-text h3', {
+      scrollTrigger: {
+        trigger: '.about-text h3',
+        start: 'bottom 95%',
+        end: 'bottom 40%',
+        scrub: true,
+        markers: true,
+      },
+      x: 100,
+    })
+  }
 
   return (
     <div className='about-div' id='about'>

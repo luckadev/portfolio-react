@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { gsap } from 'gsap/all';
 import './header.scss'
 
 const Header = () => {
@@ -11,8 +12,8 @@ const Header = () => {
   function gsapHeader() {
     const timelineHeader = gsap.timeline({ defaults: { duration: 2 }})
     timelineHeader
-      .from('.h4-header', { x: '-200%', ease: 'bounce' })
-      .from('.btn-header', { y: '-200px', ease: 'easeOut' }, 1)
+      .from('.h4-header', { x: '-200%', ease: 'power4.inOut' })
+      .from('.btn-header', { y: '-200px', ease: 'power4.inOut' }, .5)
   }
 
   function headerEffectScroll() {

@@ -5,7 +5,9 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-block: 5rem;
+  // margin-top: 5rem;
+  // margin-bottom: 7rem;
+  height: calc(100vh - 25px);
   gap: 6rem;
 
   h1 {
@@ -25,7 +27,8 @@ main {
   }
 
   @media (max-width: 768px) {
-    margin-block: 3rem;
+    // margin-top: 3rem;
+    // margin-bottom: 6rem;
     gap: 4rem;
 
     h1 {
