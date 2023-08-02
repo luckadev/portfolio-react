@@ -11,6 +11,7 @@ const Work = () => {
       topic: "Development & Design",
       link: "https://lucasdeveloper.netlify.app",
       id: 1,
+      btnText: 'View Work',
     },
     {
       image: "./assets/thirdeye-lp.png",
@@ -19,6 +20,7 @@ const Work = () => {
       topic: "Development & Design",
       link: "https://thirdeye-devlucas.netlify.app/",
       id: 2,
+      btnText: 'View Work',
     },
     {
       image: "./assets/frontcode-moc.png",
@@ -27,6 +29,7 @@ const Work = () => {
       topic: "Development & Design",
       link: "#",
       id: 1,
+      btnText: 'Soon',
     },
     {
       image: "./assets/insta-moc.png",
@@ -35,6 +38,7 @@ const Work = () => {
       topic: "Design & Content Creation",
       link: "https://www.instagram.com/ribeiroo.dev",
       id: 2,
+      btnText: 'View Work',
     },
   ]
 
@@ -51,7 +55,7 @@ const Work = () => {
             <h4>{value.name}</h4>
             <p dangerouslySetInnerHTML={{ __html: value.description }}></p>
             <p className='text-small'>{value.topic}</p>
-            <a target='blank' href={value.link}><p>View Work</p> <i className="fa-solid fa-chevron-right"></i></a>
+            <a target='blank' href={value.link}><p>{value.btnText}</p> <i className="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
       ))}

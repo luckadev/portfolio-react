@@ -18,7 +18,7 @@ const About = () => {
         end: 'bottom 40%',
         scrub: true,
       },
-      x: 100,
+      x: 80,
     })
   }
 
