@@ -33,18 +33,18 @@ const About = () => {
       </div>
       <div className='about-image'>
         <div>
-          <img className='hidden' src="./assets/photo-2.png" alt="image 1" />
+          <img className='hidden' src="./assets/img3.png" alt="image 1" />
         </div>
         <div className='div-two-image'>
-          <img className='hidden' src="./assets/photo-3.png" alt="image 2" />
-          <img className='hidden' src="./assets/photo-1.png" alt="image 3" />
+          <img className='hidden' src="./assets/img1.png" alt="image 2" />
+          <img className='hidden' src="./assets/img2.png" alt="image 3" />
         </div>
       </div>
       
       <div className='photo-carousel-mobile'>
-        <img src="./assets/photo-2.png" alt="image 1" />
-        <img src="./assets/photo-3.png" alt="image 2" />
-        <img src="./assets/photo-1.png" alt="image 3" />
+        <img src="./assets/img3.png" alt="image 1" />
+        <img src="./assets/img1.png" alt="image 2" />
+        <img src="./assets/img2.png" alt="image 3" />
       </div>
     </div>
   )
