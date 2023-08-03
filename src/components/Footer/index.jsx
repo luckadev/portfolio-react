@@ -10,7 +10,7 @@ const Footer = () => {
         <a target='blank' href="mailto:lucasribeiro.130605@gmail.com"><i className="fa-solid fa-envelope fa-2x"></i></a>
         <a target='blank' href="https://github.com/devlucaspro"><i className="fa-brands fa-github fa-2x"></i></a>
         <a target='blank' href="https://www.linkedin.com/in/devlucaspro"><i className="fa-brands fa-linkedin-in fa-2x"></i></a>
-        <a target='blank' href="https://www.dribbble.com/devlucaspro"><i className="fa-brands fa-dribbble fa-2x"></i></a>
+        <a target='blank' href="https://www.behance.net/devlucaspro"><i className="fa-brands fa-behance fa-2x"></i></a>
       </div>
       <small>Made with ❣️ by <span>Lucas Ribeiro</span></small>
     </footer>
