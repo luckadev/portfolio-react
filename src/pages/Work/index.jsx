@@ -14,12 +14,21 @@ const Work = () => {
       btnText: 'View Work',
     },
     {
+      image: "./assets/learnigo-moc.png",
+      name: "Learnigo Web platform",
+      description: "A web platform for English Learners <span>and people who want to learn and improve their english level for free</span><span class='dot'>.</span>",
+      topic: "Development & Design",
+      link: "https://learnigo.netlify.app/",
+      id: 2,
+      btnText: 'View Work',
+    },
+    {
       image: "./assets/thirdeye-lp.png",
       name: "ThirdEye landing page",
       description: "A landing page for a company called ThirdEye <span>what the reason to this company is to provide a better way for payments on web3</span><span class='dot'>.</span>",
       topic: "Development & Design",
       link: "https://thirdeye-devlucas.netlify.app/",
-      id: 2,
+      id: 1,
       btnText: 'View Work',
     },
     {
@@ -28,7 +37,7 @@ const Work = () => {
       description: "A web platform for coding challenges and projects <span>for frontend developers try them out and improve their programming skills</span><span class='dot'>.</span>",
       topic: "Development & Design",
       link: "#",
-      id: 1,
+      id: 2,
       btnText: 'Soon',
     },
     {
@@ -37,7 +46,7 @@ const Work = () => {
       description: "My Instagram account where i post programming <span>content and ui design tips for beginners, however it's in portuguese</span><span class='dot'>.</span>",
       topic: "Design & Content Creation",
       link: "https://www.instagram.com/ribeiroo.dev",
-      id: 2,
+      id: 1,
       btnText: 'View Work',
     },
   ]
