@@ -32,12 +32,21 @@ const Work = () => {
       btnText: 'View Work',
     },
     {
+      image: "./assets/hit3-moc.png",
+      name: "Hit3 landing page",
+      description: "A landing page for a company called Hit3 <span>what the reason to this is to make a friendship platform.</span><span class='dot'>.</span>",
+      topic: "Development & Design",
+      link: "#",
+      id: 2,
+      btnText: 'Soon',
+    },
+    {
       image: "./assets/frontcode-moc.png",
       name: "Frontcode web platform",
       description: "A web platform for coding challenges and projects <span>for frontend developers try them out and improve their programming skills</span><span class='dot'>.</span>",
       topic: "Development & Design",
       link: "#",
-      id: 2,
+      id: 1,
       btnText: 'Soon',
     },
     {
@@ -46,7 +55,7 @@ const Work = () => {
       description: "My Instagram account where i post programming <span>content and ui design tips for beginners, however it's in portuguese</span><span class='dot'>.</span>",
       topic: "Design & Content Creation",
       link: "https://www.instagram.com/ribeiroo.dev",
-      id: 1,
+      id: 2,
       btnText: 'View Work',
     },
   ]
