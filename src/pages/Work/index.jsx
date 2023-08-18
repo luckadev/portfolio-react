@@ -34,7 +34,7 @@ const Work = () => {
     {
       image: "./assets/hit3-moc.png",
       name: "Hit3 landing page",
-      description: "A landing page for a company called Hit3 <span>what the reason to this is to make a friendship platform.</span><span class='dot'>.</span>",
+      description: "A landing page for a company called Hit3 <span>what the reason to this is to make a friendship platform</span><span class='dot'>.</span>",
       topic: "Development & Design",
       link: "#",
       id: 2,
@@ -45,9 +45,9 @@ const Work = () => {
       name: "Frontcode web platform",
       description: "A web platform for coding challenges and projects <span>for frontend developers try them out and improve their programming skills</span><span class='dot'>.</span>",
       topic: "Development & Design",
-      link: "#",
+      link: "https://frontcodee.netlify.app/",
       id: 1,
-      btnText: 'Soon',
+      btnText: 'View Work',
     },
     {
       image: "./assets/insta-moc.png",
