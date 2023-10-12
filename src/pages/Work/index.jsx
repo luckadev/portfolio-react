@@ -54,7 +54,7 @@ const Work = () => {
       name: "Social media posts",
       description: "My Instagram account where i post programming <span>content and ui design tips for beginners, however it's in portuguese</span><span class='dot'>.</span>",
       topic: "Design & Content Creation",
-      link: "https://www.instagram.com/ribeiroo.dev",
+      link: "https://www.instagram.com/luckadev",
       id: 2,
       btnText: 'View Work',
     },
